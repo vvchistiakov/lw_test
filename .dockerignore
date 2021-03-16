@@ -1,0 +1,14 @@
+**/.git
+.gitignore
+
+/doc
+/jenkins
+/venv
+deploy.sh
+Dockerfile
+Jenkinsfile
+README.md
+task_definition.json
+task_run.json
+
+

@@ -1,0 +1,18 @@
+{
+    "cluster": "lwtest",
+    "count": 1,
+    "enableECSManagedTags": true,
+    "launchType": "FARGATE",
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "subnet-e08bfd8a"
+            ],
+            "securityGroups": [
+                "sg-0c264491c11bfe48b"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    },
+    "taskDefinition": "LWTestTask"
+}

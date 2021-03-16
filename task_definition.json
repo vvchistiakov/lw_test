@@ -1,0 +1,42 @@
+{
+    "family": "LWTestTask",
+    "executionRoleArn": "arn:aws:iam::629274918680:role/lwtest",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "lwtest",
+            "image": "vovochko/lw_test:%BUILD_NUMBER%",
+            "portMappings": [
+                {
+                    "hostPort": 8080,
+                    "protocol": "tcp",
+                    "containerPort": 8080
+                }
+            ],
+            "essential": true,
+            "environment": [
+                {
+                  "name": "S3_BUCKET",
+                  "value": "lwtest9456"
+                },
+                {
+                  "name": "S3_REGION",
+                  "value": "eu-central-1"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/LWTestTask",
+                    "awslogs-region": "eu-central-1",
+                    "nawslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
