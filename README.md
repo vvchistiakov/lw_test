@@ -72,6 +72,20 @@ version to AWS. And, I run the new definition each time via the [task-run](./tas
 To use bash features I had to create [deploy](./deploy.sh) script I call from Jenkinsfile.
 
 ## How it works
+### Jenkins
+![Dashboard](./doc/screenshots/jenkins_dashboard.png)
+![Deploy output](./doc/screenshots/jenkins_deploy_output.png)
+
+### Web
+![Web Main Page](./doc/screenshots/web_main.png)
+![Web Main Page after upload file](./doc/screenshots/web_main_upload.png)
+
+### S3
+![S3 Main](./doc/screenshots/s3_main.png)
+
+### ECS
+![ECS Task](./doc/screenshots/ecs_task.png)
+![ECS Task log](./doc/screenshots/ecs_task_log.png)
 
 
 ## helpers
