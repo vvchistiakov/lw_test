@@ -1,5 +1,7 @@
 # lw_test
 
+# TASK 1
+
 Here is the implementation of the test task about working with AWS S3.
 This project can be splited to 3 parts:
 1. Python application
@@ -94,3 +96,37 @@ To use bash features I had to create [deploy](./deploy.sh) script I call from Je
 1. [Python](https://docs.python.org/3/contents.html)
 1. [Jenkins](https://github.com/jenkinsci/docker/blob/master/README.md)
 1. [Jenkins Docker pipeline](https://plugins.jenkins.io/docker-workflow/)
+
+# TASK 2
+A good way to store  logs from Apps, Servers and so on is collecting them into log-storage systems like as Graylog or ELK.
+Each of them has a good API and client application to grub logs from source systems. Also, they have a good horisontal scaling inside. 
+And, the log data can be orginised by many parameters there.
+Regarding online monitoring. Each log sore system has a dashboard to show an analitic. Also, Grafana, has datasources 
+connections to show the data from them.
+Regarding searching the data, I would recommend to use Qlik Sense application. It is good way to compare the data btw 
+systems are used into company and found discrepancies.
+In additional, I hope a lot of alering applications such as OpsGenie can communicate with log-store sytems.
+
+
+# TASK 3
+Required Skills:
+* AWS - 5
+* Linux - 6
+* Windows Server - 4 
+* CI/CD/CT - 5
+* Jenkins - 5  
+* Groovy - 4 
+* Terraform - 5 
+* Bash - 6
+* Powershell - 8
+* Python - 7
+* Ansible - 6 
+* Docker - 8 
+* Kubernetes - 5
+* EFK stack - 0
+		
+Bonus Skills:
+* Stackstorm - 0
+* Grafana - 8
+* Prometheus - 7 
+* Golang - 5 
